@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  margin: 20px;
+  line-height: 3rem;
+}
+header {
+  color: #cd3000;
+}
+
+form h3 {
+  color: #86a72c;
+}
+form {
+  width: 40%;
+  height: max-content;
+  margin-top: 1em;
+  border: 2px solid;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+label {
+  float: left;
+  width: 30%;
+  text-align: left;
+  margin-left: 5px;
+}
+
+input {
+  width: 30%;
+  border: 1px solid;
+  line-height: 25px;
+}
+
+br {
+  clear: left;
+}
+
+#submit {
+  width: 60%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+#receipt {
+  width: 40%;
+  height: max-content;
+  margin-top: 1em;
+  border: 2px solid;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  font-size: 15px;
+}

@@ -1,0 +1,53 @@
+<!--This is a web application for a garage sale fund raiser. 
+    The organizers want an online garage sale application where the users can fill an online form 
+    and be given a receipt.
+    At least one item should be bought.
+    As a part of the fund raiser the customer must donate $10 or 10% of the total price of items they are buying.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome Garage Sale</title>
+</head>
+
+<body>
+    <header>
+        <h1>Awesome Garage Sale</h1>
+        <h3>Raising money for the Frontline Fund</h3>
+    </header>
+    <form name="garageSaleFrm" action="receipt.html" method="GET" onsubmit="return submitForm()">
+        <label for="useName">Name:</label>
+        <input type="text" id="useName" placeholder="First Last"></br>
+        <label for="useEmail">Email:</label>
+        <input type="text" id="useEmail" placeholder="email@domain.com"></br>
+        <label for="ccn">Credit Card Number:</label>
+        <input type="text" id="ccn" placeholder="xxxx-xxxx-xxxx-xxxx"></br>
+        <label for="month">Credit Card Expiry Month:</label>
+        <input type="text" id="month" placeholder="MMM"></br>
+        <label for="year">Credit Card Expiry Year:</label>
+        <input type="text" id="year" placeholder="yyyy"></br>
+        <h3>Buy generously</h3>
+        <label for="water">Number of Water Bottles ($3)</label>
+        <input type="text" id="water" placeholder="10"></br>
+        <label for="lollipop">Number of lollipops ($1)</label>
+        <input type="text" id="lollipop" placeholder="10"></br>
+        <label for="cake">Number of Cup Cakes ($2)</label>
+        <input type="text" id="cake" placeholder="10"></br>
+        <label for="shirt">Number of T-shirts ($10)</label>
+        <input type="text" id="shirt" placeholder="10"></br>
+        <label for="chocolate">Number of Chocolates ($5)</label>
+        <input type="text" id="chocolate" placeholder="10"></br>
+        <input type="submit" id="submit" value="Checkout">
+    </form>
+    <div>
+        <p><span id="errorMes"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
